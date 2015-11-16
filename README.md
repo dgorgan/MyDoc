@@ -1,2 +1,2 @@
 # MyDoc
-MyDoc is a service that allows users to create profiles so they can and find and review doctors
+MyDoc is a service that allows users to create profiles so that they can browse and review doctors. The landing page will give a brief overview of the application and allow users to either sign up for a free or paid account, or to browse doctors. Browsers will only be allowed to view doctors profiles and their overall rating on a 1-5 star scale. Users that sign up for a free account will also get to view the actual ratings themselves. Finally, the paid account will also allow users to schedule appointments with doctors.
