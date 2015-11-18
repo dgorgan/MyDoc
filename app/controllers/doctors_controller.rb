@@ -1,6 +1,6 @@
 class DoctorsController < ApplicationController
   before_action :set_doctor, only: [:edit, :show, :update, :destroy]
-  
+
   def index
     @doctors = Doctor.all
   end
@@ -27,7 +27,7 @@ class DoctorsController < ApplicationController
 
   private
   def doctors_params
-    params.require(:doctor).permit(name:, :email, :photo:, :speciality)
+    params.require(:doctor).permit(:name, :email, :photo, :specialty)
   end
 
   def set_doctor

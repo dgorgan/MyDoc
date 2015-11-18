@@ -10,18 +10,22 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
-
+ *= require_self
+ *= require_tree .
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 .navbar {
+  background: #005C97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.navbar-inverse .navbar-brand {
+  color: white;
+}
 
-
-background: #005C97; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
 }

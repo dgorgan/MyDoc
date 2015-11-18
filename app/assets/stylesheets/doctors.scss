@@ -1,3 +1,25 @@
 // Place all the styles related to the doctors controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.doctor-img {
+  border-radius: 25%;
+  box-shadow: 4px 6px 4px 0px rgba(50, 50, 50, 0.75);
+  width: 220px;
+  height: 200px;
+}
+
+.doctor-description-style {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  border-radius: 5px;
+}
+
+.glyph-style {
+  border: 2px solid black;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
