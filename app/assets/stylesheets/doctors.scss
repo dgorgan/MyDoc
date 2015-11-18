@@ -4,6 +4,7 @@
 
 .doctor-img {
   border-radius: 25%;
+  border: 1px solid #e1e8ed;
   box-shadow: 4px 6px 4px 0px rgba(50, 50, 50, 0.75);
   width: 220px;
   height: 200px;
@@ -23,7 +24,40 @@
   background-color: #286090;
   border-color: #204d74;
 }
+blockquote {
+    border: 0;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
 
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
 // .twitter {
 //   margin-top: 40px;
 // }

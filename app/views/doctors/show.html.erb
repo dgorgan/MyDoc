@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <img class="doctor-img" src = <%= @doctor.photo %> />
+      <h1><%= @doctor.name %></h1>
+      <h3><span class="glyphicon glyphicon-heart-empty glyph-style" aria-hidden="true"></span> <%= @doctor.specialty %></h3>
+        <div class="well doctor-description-style">
+           <p>
+             <h3>About me</h3>
+              <blockquote><%= @doctor.description %></blockquote>
+           </p>
+        </div>
+    </div>
+</div>
