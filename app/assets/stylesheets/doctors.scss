@@ -60,3 +60,25 @@ blockquote cite {
 blockquote cite:before {
     content: "\2014 \2009";
 }
+
+.rating {
+  color: #46b8da;
+  margin-top: 50px;
+  font-size: 34px;
+}
+
+.rating:hover {
+  font-size: 40px;
+  color: #005C97; /* fallback for old browsers */
+}
+
+.rating-number {
+  font-size: 15px;
+  color: gray;
+}
+
+.doctors-show-back-button {
+  position: relative;
+  left: 115px;
+  top: 225px;
+}
