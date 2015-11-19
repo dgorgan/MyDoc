@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
 
   resources :doctors do
+    resources :comments
     member do
       put "like", to: "doctors#upvote"
       put "dislike", to: "doctors#downvote"
