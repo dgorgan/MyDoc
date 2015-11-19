@@ -3,8 +3,13 @@ Rails.application.routes.draw do
   root 'pages#index'
   get '/about' => 'pages#about'
 
+  resources :doctors do
+    member do
+      put "like", to: "doctors#upvote"
+      put "dislike", to: "doctors#downvote"
+    end
+  end
 
-  resources :doctors
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

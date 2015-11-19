@@ -1,5 +1,18 @@
 class DoctorsController < ApplicationController
   before_action :set_doctor, only: [:edit, :show, :update, :destroy]
+  # before_action :upvote, :downvote
+
+  def upvote
+    @doctor = Doctor.find(params[:id])
+    @doctor.upvote_by current_user
+    redirect_to @doctor
+  end
+
+  def downvote
+    @doctor = Doctor.find(params[:id])
+    @doctor.downvote_by current_user
+    redirect_to @doctor
+  end
 
   def index
     @doctors = Doctor.all
