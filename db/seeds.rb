@@ -23,5 +23,8 @@ Doctor.create(name: "Scott Clifton", email: "bertha@doctors.com", photo:
 as anyone else! Now I'm angry. My photo doesn't even represent my practice! Someone
 is about to get a root canal..WITHOUT anesthesia.")
 
+Plan.create(name: "free", price: 0)
+Plan.create(name: "paid", price: 5)
+
 
 #   Mayor.create(name: 'Emanuel', city: cities.first)
