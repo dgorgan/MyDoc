@@ -9,7 +9,7 @@ Doctor.destroy_all
 Doctor.create(name: "Patrictia Wellington", email: "patricia@doctors.com", photo:
 "http://blogs.lawyers.com/wp-content/uploads/2013/09/doctor-error-300.jpg", specialty:
 "Psychiatrist", description: "I have been praciticing psychiatry for over 25 years. Bipolar,
-schizo, multiple-personality disorder. Whatever it is, i will cure it!")
+schizo, multiple-personality disorder. Whatever it is, i will cure it! Maybe.")
 
 Doctor.create(name: "Bob Petterson", email: "bob@doctors.com", photo:
 "http://www.dpinjurylawyers.com/images/doctor-error.jpg", specialty:
