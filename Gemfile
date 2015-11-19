@@ -21,6 +21,11 @@ gem 'devise'
 #rating system
 gem 'acts_as_votable'
 
+#use stripe for payements
+gem 'stripe'
+
+#figaro for secure stripe keys 
+gem 'figaro'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
