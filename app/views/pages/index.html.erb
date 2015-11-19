@@ -5,3 +5,20 @@
       directly.</h3><br>
   <%= link_to 'Browse doctors', doctors_path, class: 'btn-lg btn-primary' %>
 </div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-center">Free Membership</h2>
+      <h4>Sign up for free and rate doctors today! You may leave comments with disqus.</h4>
+      <br/>
+      <%= link_to "Free account", new_user_registration_path(plan: @free_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="well">
+      <h2 class="text-center">Paid Membership</h2>
+      <h4>Sign up for a paid account for $5/month and comment on doctors directly with our build in commenting system!</h4><br>
+      <%= link_to "Paid account", new_user_registration_path(plan: @paid_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+    </div>
+  </div>
+</div>
