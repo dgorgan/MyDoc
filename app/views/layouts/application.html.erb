@@ -24,8 +24,16 @@
      </div>
 
       <div class="collapse navbar-collapse" id="main-nav-collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right right-side-nav">
           <li><%= link_to "About", about_path %></li>
+
+          <% if current_user %>
+            <li><%= link_to 'Signout', destroy_user_session_path, class: "btn btn-danger", :method => :delete  %></li>
+          <% else %>
+            <li><%= link_to 'Signup', new_user_registration_path, class: "btn btn-success" %></li>
+            <li><%= link_to 'Login', new_user_session_path, class: "btn btn-primary" %></li>
+          <% end %>
+
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
