@@ -18,13 +18,10 @@
                           data: { confirm: 'Are you sure?' } %>
 
       </div>
-    <% end %>
+      <% end %>
+    <% else %>
+    <div class="well text-center paid-account">
+      <h4>You must be logged in with a paid account to view this page!</h4>
+      <%= link_to 'Back', doctor_path(params[:doctor_id]), class: 'btn btn-info' %>
+    </div>
   <% end %>
-
-<div class="well text-center paid-account">
-  <h2>You must be logged in with a paid account to view this page!</h2>
-</div>
-<div class="well text-center paid-account">
-  <h4>You must be logged in with a paid account to view this page!</h4>
-  <%= link_to 'Back', doctor_path(params[:doctor_id]), class: 'btn btn-info' %>
-</div>
