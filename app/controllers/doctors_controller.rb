@@ -16,10 +16,12 @@ class DoctorsController < ApplicationController
 
   def index
     @doctors = Doctor.all
+    # @comments = Comment.find(params[:comment_id])
   end
 
   def create
     @doctor = Doctor.find(params[:id])
+
   end
 
   def new
@@ -27,9 +29,11 @@ class DoctorsController < ApplicationController
   end
 
   def edit
+    @comment = Comment.find(params[:comment_id])
   end
 
   def show
+    @comments = @doctor.comments
   end
 
   def update

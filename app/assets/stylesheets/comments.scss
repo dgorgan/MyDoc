@@ -1,3 +1,13 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.secret-comments {
+  position: absolute;
+  margin-top: 400px;
+}
+
+#date {
+  font-weight: bold;
+  font-size: 16px;
+}
