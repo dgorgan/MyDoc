@@ -1,5 +1,5 @@
 <div class="jumbotron text-center">
-  <h1>MyDoc</h1>
+  <h1 id="landing-page-mydoc">MyDoc</h1>
   <h3>MyDoc allows you to to browse and review doctors effortlessly! Sign up for
      a free account to view reviews, or pay a low monthly fee to schedule appointments
       directly.</h3><br>
@@ -9,15 +9,15 @@
   <div class="col-md-6">
     <div class="well">
       <h2 class="text-center">Free Membership</h2>
-      <h4>Sign up for free and upvote doctors today! You may still leave comments with disqus without signing up. </h4>
-      <br/>
+      <h4 class="text-center">Sign up for free and upvote doctors today! You may still leave comments with disqus without signing up. </h4>
+      <br/><br>
       <%= link_to "Free account", new_user_registration_path(plan: @free_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
     </div>
   </div>
   <div class="col-md-6">
     <div class="well">
       <h2 class="text-center">Paid Membership</h2>
-      <h4>Sign up for a paid account for $5/month and leave comments with doctors directly with our build in commenting system!</h4><br>
+      <h4 class="text-center">Sign up for a paid account for $5/month and leave comments with doctors directly with our build in commenting system!</h4><br>
       <%= link_to "Paid account", new_user_registration_path(plan: @paid_plan.id), class: 'btn btn-success btn-lg btn-block' %>
     </div>
   </div>

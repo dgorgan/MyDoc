@@ -16,10 +16,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#logo, a {
+  font-family: 'Cinzel', serif;
+}
 
+#landing-page-mydoc {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Raleway', sans-serif;
+}
 
 .navbar {
-  opacity: 0.75;
+  opacity: 0.85;
   background: #005C97; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
