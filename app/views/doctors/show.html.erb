@@ -11,8 +11,6 @@
            </p>
         </div>
     </div>
-    <% if current_user %>
-      <% if current_user.plan_id = '1' %>
       <div class="col-md-3 text-center">
 
           <%= link_to like_doctor_path(@doctor), method: :put do %>
@@ -27,8 +25,6 @@
             <span class="rating-number"><%= @doctor.get_downvotes.size %></span>
           <% end %>
       </div>
-      <% end %>
-      <% end %>
 
       <%= link_to 'Back', doctors_path, class: 'btn btn-warning doctors-show-back-button' %>
 
