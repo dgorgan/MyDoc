@@ -1,19 +1,26 @@
-
-    <div class="row text-center">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="well">
-          <%= @comment.body %>
+<% if user_signed_in? %>
+    <% if current_user.plan_id == 2 %>
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="well">
+            <%= @comment.body %>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-md-6 col-md-offset-3 text-center">
+      <div class="col-md-6 col-md-offset-3 text-center">
 
-      <%= link_to 'Back', doctor_comments_path, class: 'btn btn-info' %>
+        <%= link_to 'Back', doctor_comments_path, class: 'btn btn-info' %>
 
-      <%= link_to 'Edit', edit_doctor_comment_path(@doctor, @comment), class: 'btn btn-warning' %>
+        <%= link_to 'Edit', edit_doctor_comment_path(@doctor, @comment), class: 'btn btn-warning' %>
 
-      <%= link_to 'Destroy', doctor_comment_path, class: 'btn btn-danger', method: :delete,
-                        data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Destroy', doctor_comment_path, class: 'btn btn-danger', method: :delete,
+                          data: { confirm: 'Are you sure?' } %>
 
-    </div>
+      </div>
+    <% end %>
+  <% end %>
+
+<div class="well text-center paid-account">
+  <h2>You must be logged in with a paid account to view this page!</h2>
+</div>

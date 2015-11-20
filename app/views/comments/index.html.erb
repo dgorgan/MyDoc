@@ -1,20 +1,27 @@
-
-
-  <div class = "row text-center">
-    <div class="col-md-12">
-      <div class="jumbotron">
-        <h1>Leave a comment!</h1>
-          <% @doctor.comments.each do |comment| %>
-          <div class="well">
-            <p id="date"><%= comment.created_at.to_date %></p>
-            <a href='comments/<%= comment.id %>'<p id="date"><p><%=comment.body %></p></a>
+<% if user_signed_in? %>
+      <% if current_user.plan_id == 2 %>
+          <div class="row text-center">
+            <div class="col-md-12">
+              <div class="jumbotron">
+                <h1>Leave a comment!</h1>
+                  <% @doctor.comments.each do |comment| %>
+                  <div class="well">
+                    <p id="date"><%= comment.created_at.to_date %></p>
+                    <a href='comments/<%= comment.id %>'<p id="date"><p><%=comment.body %></p></a>
+                  </div>
+              <% end %>
+            </div>
+           </div>
           </div>
-      <% end %>
-    </div>
-   </div>
-  </div>
 
-  <div class="col-md-4 col-md-offset-4 text-center">
-    <%= link_to 'Back', doctor_path(params[:doctor_id]), class: 'btn btn-info' %>
-    <%= link_to 'New', new_doctor_comment_path, class: 'btn btn-success' %>
-  </div>
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <%= link_to 'Back', doctor_path(params[:doctor_id]), class: 'btn btn-info' %>
+            <%= link_to 'New', new_doctor_comment_path, class: 'btn btn-success' %>
+          </div>
+    <% else %>
+  <% end %>
+<% end %>
+
+<div class="well text-center paid-account">
+  <h4>You must be logged in with a paid account to view this page!</h4>
+</div>

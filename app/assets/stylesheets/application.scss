@@ -16,7 +16,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
 .navbar {
+  opacity: 0.75;
   background: #005C97; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -51,6 +54,25 @@ a {
 
 
 .alert-notice {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1429032021766-c6a53949594f?dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.0.0&ixlib=rb-0.3.5&q=50&w=1450') no-repeat fixed center;
+  background-size: cover;
+}
+
+.jumbotron {
+  background-color: rgba(238, 238, 238, 0.39)
+}
+
+.well {
+  background-color: rgba(238, 238, 238, 0.50)
+}
+
+.paid-account {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
