@@ -16,6 +16,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* padding so fixed navbar doesn't overlap content */
+
+body {
+  padding-top: 70px;
+ }
+
 #logo, a {
   font-family: 'Cinzel', serif;
 }
