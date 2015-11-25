@@ -18,7 +18,7 @@ class DoctorsController < ApplicationController
     @doctors = Doctor.all
     # @comments = Comment.find(params[:comment_id])
   end
-
+# ERICA: Don't forget to clear out any code, commented out or otherwise, that you're not actually using before you go into production
   def create
     @doctor = Doctor.find(params[:id])
 

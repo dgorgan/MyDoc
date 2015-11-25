@@ -9,6 +9,7 @@
           <% if @comment.errors.any? %>
             <div id="error_explanation">
               <h2>
+                <!-- ERICA: Nice! I didn't know you could use pluralize this way... -->
                 <%= pluralize(@comment.errors.count, "error") %> prohibited
                 this article from being saved:
               </h2>
