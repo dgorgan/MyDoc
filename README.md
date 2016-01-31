@@ -10,3 +10,6 @@ For this project I used bootstrap for styling, the acts_as_votable gem for the u
 #Planning 
 I have ERD/wireframes and silver/gold goals on my trello account for this project - https://trello.com/b/ntsi4TD2/ga-project-2-mydoc.
 
+#Installation
+clone down git@github.com:dgorgan/mydoc, then run rake db:create, rake db:migrate, rake db:seed then boot up the rails server and visit localhost:3000 to view.
+
