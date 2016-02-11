@@ -92,3 +92,11 @@ blockquote cite:before {
 .weather li {
   list-style-type: none;
 }
+
+.weather li:first-of-type {
+  font-size: 26px;
+}
+
+.glyphicon-cloud, li:nth-of-type(2) {
+  font-size: 26px;
+}
