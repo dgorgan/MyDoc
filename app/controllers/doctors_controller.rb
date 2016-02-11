@@ -16,7 +16,7 @@ class DoctorsController < ApplicationController
 
   def index
     @doctors = Doctor.all
-    # @comments = Comment.find(params[:comment_id])
+    @weather = HTTParty.get('http://api.wunderground.com/api/52fb9e55860dea7e/conditions/q/CA/San_Francisco.json')
   end
 
   def create
@@ -40,6 +40,10 @@ class DoctorsController < ApplicationController
   end
 
   def destroy
+  end
+
+  def HTTParty
+    @weather = HTTParty.get('http://api.wunderground.com/api/52fb9e55860dea7e/conditions/q/CA/San_Francisco.json')
   end
 
   private

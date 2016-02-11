@@ -1,3 +1,20 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="well">
+      <ul class="weather">
+        <li><%= @weather["current_observation"]["display_location"]["full"]%>
+            Weather <%= @weather["current_observation"]["display_location"]["zip"]%></li>
+            <li><%= @weather["current_observation"]["temperature_string"]%></li>
+             <li><%= @weather["current_observation"]["weather"]%></li>
+             <li>Wind <%= @weather["current_observation"]["wind_mph"]%> mph</li>
+             <li>Dew <%= @weather["current_observation"]["dewpoint_f"]%> F</li>
+             <li>Humidity <%= @weather["current_observation"]["relative_humidity"]%></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
 <% @doctors.each do |doctor| %>
   <div class="row">
     <div class="col-md-3">

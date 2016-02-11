@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'users/registrations' }
   root 'pages#index'
   get '/about' => 'pages#about'
-
   resources :doctors do
     resources :comments
     member do

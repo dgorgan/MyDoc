@@ -18,6 +18,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 #user authentication
 gem 'devise'
 
+# Use httparty gem to simplify http requests
+gem 'httparty'
+
 #rating system
 gem 'acts_as_votable'
 
