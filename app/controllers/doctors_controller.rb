@@ -42,9 +42,6 @@ class DoctorsController < ApplicationController
   def destroy
   end
 
-  def HTTParty
-    @weather = HTTParty.get('http://api.wunderground.com/api/52fb9e55860dea7e/conditions/q/CA/San_Francisco.json')
-  end
 
   private
   def doctors_params
