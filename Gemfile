@@ -61,6 +61,7 @@ group :development do
   gem 'spring'
 end
 
+# Use rails_12factor for serving static assets in production and for better console logging
 group :production do
   gem 'rails_12factor'
 end
