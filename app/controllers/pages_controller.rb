@@ -4,3 +4,4 @@ class PagesController < ApplicationController
      @paid_plan = Plan.find(2)
   end
 end
+# ERICA: Why pages and not plans?

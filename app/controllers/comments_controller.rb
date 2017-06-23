@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!, only: [:destroy, :edit]
   before_action :set_comment, only: [:edit, :show, :update, :destroy]
-
+# ERICA: Great use of before actions! Looks like you could also use a set_doctor before action.
   def index
     @comments = Comment.all.order("comments.created_at desc")
     @doctor = Doctor.find(params[:doctor_id])

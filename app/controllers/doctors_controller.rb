@@ -18,7 +18,7 @@ class DoctorsController < ApplicationController
     @doctors = Doctor.all
     @weather = HTTParty.get('http://api.wunderground.com/api/52fb9e55860dea7e/conditions/q/CA/San_Francisco.json')
   end
-
+# ERICA: Don't forget to clear out any code, commented out or otherwise, that you're not actually using before you go into production
   def create
     @doctor = Doctor.find(params[:id])
 
